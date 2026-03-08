@@ -7,7 +7,7 @@
 .trainers-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--sp-xl);
+    gap: var(--sp-lg);
 }
 
 .trainer-card {
@@ -20,14 +20,15 @@
 }
 
 .trainer-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
     border-color: rgba(232, 50, 30, 0.3);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7), 0 0 30px rgba(232, 50, 30, 0.15);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(232, 50, 30, 0.12);
 }
 
 .trainer-img-wrap {
     position: relative;
-    aspect-ratio: 3/4;
+    aspect-ratio: 1/1;
+    /* Square — less vertical space */
     overflow: hidden;
     background: var(--clr-bg-3);
 }
@@ -36,17 +37,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: top center;
     transition: transform 0.7s ease;
+    image-rendering: auto;
 }
 
 .trainer-card:hover .trainer-img-wrap img {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 .trainer-social {
     position: absolute;
-    right: var(--sp-sm);
+    right: var(--sp-xs);
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -61,64 +63,65 @@
 }
 
 .t-social-link {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(8px);
     border-radius: 50%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: all var(--transition-fast);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .t-social-link:hover {
     background: var(--clr-primary);
-    transform: scale(1.15);
+    transform: scale(1.12);
 }
 
 .trainer-info {
-    padding: var(--sp-lg);
+    padding: var(--sp-md);
 }
 
 .trainer-name {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     font-weight: 800;
     color: var(--clr-text-primary);
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .trainer-role {
     display: inline-block;
     font-size: var(--fs-xs);
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--clr-primary);
     margin-bottom: var(--sp-sm);
 }
 
 .trainer-bio {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
     color: var(--clr-text-secondary);
     line-height: 1.7;
-    margin-bottom: var(--sp-md);
+    margin-bottom: var(--sp-sm);
 }
 
 .trainer-specialties {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
 }
 
 .trainer-specialties span {
-    font-size: var(--fs-xs);
-    font-weight: 600;
+    font-size: 0.68rem;
+    font-weight: 700;
     color: var(--clr-text-secondary);
     background: var(--clr-surface);
     border: 1px solid var(--clr-border);
-    padding: 4px 12px;
+    padding: 3px 10px;
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
 }
@@ -130,14 +133,21 @@
 
 @media (max-width: 900px) {
     .trainers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--sp-md);
+    }
+}
+
+@media (max-width: 640px) {
+    .trainers-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 420px) {
     .trainers-grid {
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 360px;
         margin: 0 auto;
     }
 }

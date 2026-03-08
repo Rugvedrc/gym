@@ -9,6 +9,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* ---- Image sharpness fix ---- */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: auto;
+}
+
 /* ---- Section Layout ---- */
 .section-container {
     max-width: var(--container-max);
@@ -18,7 +25,7 @@ body {
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--sp-3xl);
+    margin-bottom: var(--sp-2xl);
 }
 
 .section-tag {
@@ -28,22 +35,22 @@ body {
     background: rgba(232, 50, 30, 0.12);
     border: 1px solid rgba(232, 50, 30, 0.3);
     color: var(--clr-primary);
-    padding: 6px 18px;
+    padding: 5px 16px;
     border-radius: var(--radius-full);
     font-size: var(--fs-xs);
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin-bottom: var(--sp-md);
+    margin-bottom: var(--sp-sm);
 }
 
 .section-title {
     font-family: var(--font-display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
     letter-spacing: 0.03em;
-    line-height: 1.1;
+    line-height: 1.05;
     color: var(--clr-text-primary);
-    margin-bottom: var(--sp-md);
+    margin-bottom: var(--sp-sm);
 }
 
 .gradient-text {
@@ -54,9 +61,9 @@ body {
 }
 
 .section-subtitle {
-    font-size: var(--fs-md);
+    font-size: var(--fs-base);
     color: var(--clr-text-secondary);
-    max-width: 600px;
+    max-width: 580px;
     margin: 0 auto;
     line-height: 1.7;
 }
@@ -66,10 +73,10 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 14px 32px;
+    padding: 13px 28px;
     border-radius: var(--radius-full);
     font-family: var(--font-body);
-    font-size: var(--fs-base);
+    font-size: var(--fs-sm);
     font-weight: 700;
     letter-spacing: 0.04em;
     transition: all var(--transition-mid);
@@ -133,19 +140,20 @@ body {
 /* ---- Toast ---- */
 .toast {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     background: var(--gradient-brand);
     color: #fff;
     padding: 1rem 1.5rem;
     border-radius: var(--radius-md);
     font-weight: 600;
+    font-size: var(--fs-sm);
     z-index: 9999;
     transform: translateY(100px);
     opacity: 0;
     transition: all var(--transition-mid);
     pointer-events: none;
-    max-width: 340px;
+    max-width: 320px;
     box-shadow: var(--shadow-lg);
 }
 
@@ -156,7 +164,7 @@ body {
 
 /* ---- Scrollbar ---- */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -166,4 +174,12 @@ body {
 ::-webkit-scrollbar-thumb {
     background: var(--clr-primary);
     border-radius: 3px;
+}
+
+/* ---- Mobile fixes ---- */
+@media (max-width: 480px) {
+    .btn {
+        padding: 11px 22px;
+        font-size: var(--fs-xs);
+    }
 }

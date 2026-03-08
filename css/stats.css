@@ -3,7 +3,7 @@
     background: var(--clr-bg-2);
     border-top: 1px solid var(--clr-border);
     border-bottom: 1px solid var(--clr-border);
-    padding: var(--sp-xl) var(--container-pad);
+    padding: var(--sp-lg) var(--container-pad);
     position: relative;
     overflow: hidden;
 }
@@ -24,22 +24,23 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: var(--sp-lg);
+    gap: var(--sp-md);
     flex-wrap: wrap;
 }
 
 .stat-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0 2px;
+    min-width: 120px;
 }
 
 .stat-num {
-    display: inline-block;
     font-family: var(--font-display);
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     letter-spacing: 0.04em;
     background: var(--gradient-brand);
     -webkit-background-clip: text;
@@ -50,37 +51,31 @@
 
 .stat-plus {
     font-family: var(--font-display);
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     background: var(--gradient-brand);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    line-height: 1;
     align-self: flex-start;
-    line-height: 1.3;
-    display: inline-block;
-}
-
-.stat-item {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 3px;
 }
 
 .stat-label {
     width: 100%;
     text-align: center;
-    font-size: var(--fs-sm);
-    font-weight: 500;
+    font-size: var(--fs-xs);
+    font-weight: 600;
     color: var(--clr-text-secondary);
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    margin-top: 4px;
 }
 
 .stat-divider {
     width: 1px;
-    height: 60px;
-    background: linear-gradient(180deg, transparent, var(--clr-primary), transparent);
-    opacity: 0.4;
+    height: 48px;
+    background: linear-gradient(180deg, transparent, rgba(232, 50, 30, 0.4), transparent);
 }
 
 @media (max-width: 600px) {
@@ -89,6 +84,16 @@
     }
 
     .stats-container {
-        gap: var(--sp-xl) var(--sp-2xl);
+        gap: var(--sp-md) var(--sp-xl);
+    }
+
+    .stat-item {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    .stats-container {
+        gap: var(--sp-sm) var(--sp-lg);
     }
 }
