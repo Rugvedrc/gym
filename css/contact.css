@@ -1,0 +1,204 @@
+/* ===== CONTACT SECTION ===== */
+.contact {
+    padding: var(--section-padding) 0;
+    background: var(--clr-bg-2);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: var(--sp-3xl);
+    align-items: start;
+}
+
+/* Info Cards */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-sm);
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-md);
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    padding: var(--sp-md) var(--sp-lg);
+    transition: all var(--transition-mid);
+}
+
+.contact-card:hover {
+    border-color: var(--clr-border-hover);
+    background: var(--clr-surface-hover);
+    transform: translateX(6px);
+}
+
+.contact-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    width: 48px;
+    text-align: center;
+}
+
+.contact-card h4 {
+    font-size: var(--fs-sm);
+    font-weight: 800;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+}
+
+.contact-card p {
+    font-size: var(--fs-sm);
+    color: var(--clr-text-secondary);
+    line-height: 1.7;
+}
+
+.contact-card a {
+    color: var(--clr-text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.contact-card a:hover {
+    color: var(--clr-primary);
+}
+
+/* Map */
+.map-wrapper {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--clr-border);
+    height: 220px;
+    margin-top: var(--sp-sm);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(0.7) invert(0.9) hue-rotate(180deg);
+    transition: filter var(--transition-mid);
+}
+
+.map-wrapper:hover iframe {
+    filter: grayscale(0) invert(0);
+}
+
+/* Form */
+.contact-form {
+    background: var(--gradient-card);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-xl);
+    padding: var(--sp-xl);
+}
+
+.form-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-3xl);
+    letter-spacing: 0.04em;
+    color: var(--clr-text-primary);
+    margin-bottom: var(--sp-xl);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: var(--sp-md);
+}
+
+.form-group label {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--clr-text-secondary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-md);
+    padding: 14px 18px;
+    color: var(--clr-text-primary);
+    font-size: var(--fs-base);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--clr-text-muted);
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+}
+
+.form-group select option {
+    background: var(--clr-bg-3);
+    color: var(--clr-text-primary);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 3px rgba(232, 50, 30, 0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-submit {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    font-size: var(--fs-md);
+    margin-top: var(--sp-sm);
+}
+
+.btn-arrow {
+    transition: transform var(--transition-mid);
+}
+
+.form-submit:hover .btn-arrow {
+    transform: translateX(6px);
+}
+
+.form-disclaimer {
+    font-size: var(--fs-xs);
+    color: var(--clr-text-muted);
+    text-align: center;
+    margin-top: var(--sp-sm);
+}
+
+@media (max-width: 960px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

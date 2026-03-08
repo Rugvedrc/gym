@@ -1,0 +1,213 @@
+/* ===== CLASSES SECTION ===== */
+.classes {
+    padding: var(--section-padding) 0;
+    background: var(--clr-bg);
+}
+
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-lg);
+    margin-bottom: var(--sp-3xl);
+}
+
+.class-card {
+    background: var(--clr-bg-3);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-mid), box-shadow var(--transition-mid);
+}
+
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-card), var(--shadow-glow);
+}
+
+.class-img-wrap {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.class-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.class-card:hover .class-img-wrap img {
+    transform: scale(1.08);
+}
+
+.class-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.7) 100%);
+    display: flex;
+    align-items: flex-start;
+    padding: var(--sp-sm);
+    justify-content: flex-end;
+}
+
+.class-level {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.difficulty-hard {
+    background: rgba(232, 50, 30, 0.9);
+    color: #fff;
+}
+
+.difficulty-medium {
+    background: rgba(255, 107, 53, 0.9);
+    color: #fff;
+}
+
+.difficulty-easy {
+    background: rgba(76, 175, 80, 0.85);
+    color: #fff;
+}
+
+.class-info {
+    padding: var(--sp-lg);
+}
+
+.class-meta {
+    display: flex;
+    gap: var(--sp-sm);
+    margin-bottom: var(--sp-sm);
+}
+
+.class-meta span {
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--clr-text-muted);
+    letter-spacing: 0.05em;
+}
+
+.class-info h3 {
+    font-size: var(--fs-xl);
+    font-weight: 800;
+    color: var(--clr-text-primary);
+    margin-bottom: var(--sp-xs);
+}
+
+.class-info p {
+    font-size: var(--fs-sm);
+    color: var(--clr-text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--sp-md);
+}
+
+.class-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid rgba(232, 50, 30, 0.5);
+    border-radius: var(--radius-full);
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: var(--fs-sm);
+    transition: all var(--transition-mid);
+}
+
+.class-btn:hover {
+    background: var(--gradient-brand);
+    border-color: transparent;
+    color: #fff;
+    transform: translateX(4px);
+}
+
+/* Timetable */
+.timetable-wrapper {
+    background: var(--clr-bg-2);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.timetable-heading {
+    font-family: var(--font-display);
+    font-size: var(--fs-2xl);
+    letter-spacing: 0.05em;
+    color: var(--clr-text-primary);
+    padding: var(--sp-lg) var(--sp-xl);
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.timetable {
+    overflow-x: auto;
+}
+
+.timetable table {
+    min-width: 700px;
+}
+
+.timetable th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--clr-text-muted);
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.timetable td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.timetable tr:last-child td {
+    border-bottom: none;
+}
+
+.timetable tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.time-slot {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--clr-primary);
+    white-space: nowrap;
+}
+
+.tt-class {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.tt-class.morning {
+    background: rgba(255, 167, 38, 0.12);
+    color: var(--clr-accent);
+    border: 1px solid rgba(255, 167, 38, 0.25);
+}
+
+.tt-class.evening {
+    background: rgba(232, 50, 30, 0.12);
+    color: #ff8a75;
+    border: 1px solid rgba(232, 50, 30, 0.25);
+}
+
+@media (max-width: 900px) {
+    .classes-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

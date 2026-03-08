@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Be The Best Health Club (BTB) – Chhatrapati Sambhajinagar's premier fitness destination. State-of-the-art equipment, expert trainers, and transformative programs. Join us today!" />
+  <meta name="keywords" content="BTB Health Club, Be The Best, gym Chhatrapati Sambhajinagar, fitness club Aurangabad, personal training Maharashtra, gym Tilaknagar" />
+  <meta name="author" content="Be The Best Health Club" />
+  <meta property="og:title" content="Be The Best Health Club | BTB – Chhatrapati Sambhajinagar" />
+  <meta property="og:description" content="Transform your body and mind at BTB Health Club – the most premium gym in Chhatrapati Sambhajinagar, Maharashtra." />
+  <meta property="og:type" content="website" />
+  <title>Be The Best Health Club | BTB – Chhatrapati Sambhajinagar</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS Modules -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/stats.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/classes.css" />
+  <link rel="stylesheet" href="css/trainers.css" />
+  <link rel="stylesheet" href="css/membership.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/testimonials.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link" aria-label="BTB Health Club Home">
+        <div class="logo-icon">
+          <span class="logo-btb">BTB</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Be The Best</span>
+          <span class="logo-sub">Health Club</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#classes" class="nav-link" id="nav-classes">Classes</a></li>
+        <li><a href="#trainers" class="nav-link" id="nav-trainers">Trainers</a></li>
+        <li><a href="#membership" class="nav-link" id="nav-membership">Membership</a></li>
+        <li><a href="#gallery" class="nav-link" id="nav-gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+
+      <a href="#membership" class="nav-cta" id="nav-join-btn">Join Now</a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="assets/images/hero_bg.png" alt="BTB Health Club interior" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="hero-particles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Chhatrapati Sambhajinagar's #1 Gym</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line1">BE THE</span>
+        <span class="hero-title-line2">BEST</span>
+        <span class="hero-title-line3">VERSION OF YOURSELF</span>
+      </h1>
+      <p class="hero-subtitle">Transform your body, elevate your mind, and unleash your potential at BTB Health Club — where champions are forged.</p>
+      <div class="hero-cta-group">
+        <a href="#membership" class="btn btn-primary" id="hero-primary-cta">Start Your Journey</a>
+        <a href="#classes" class="btn btn-ghost" id="hero-secondary-cta">
+          <span class="play-icon">▶</span> Explore Classes
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll to discover</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-bar" id="stats" aria-label="Club Statistics">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-num" data-target="1500" id="stat-members">0</span>
+        <span class="stat-plus">+</span>
+        <span class="stat-label">Active Members</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="12" id="stat-trainers">0</span>
+        <span class="stat-plus">+</span>
+        <span class="stat-label">Expert Trainers</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="8" id="stat-years">0</span>
+        <span class="stat-plus">+</span>
+        <span class="stat-label">Years Strong</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="25" id="stat-classes">0</span>
+        <span class="stat-plus">+</span>
+        <span class="stat-label">Weekly Classes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrapper">
+            <img src="assets/images/about_gym.png" alt="BTB Health Club premium gym floor" class="about-img" loading="lazy" />
+            <div class="about-img-overlay"></div>
+          </div>
+          <div class="about-experience-badge">
+            <span class="exp-num">8+</span>
+            <span class="exp-text">Years of Excellence</span>
+          </div>
+          <div class="about-cert-badge">
+            <span class="cert-icon">🏆</span>
+            <span class="cert-text">Best Gym Award 2023</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag">About BTB</div>
+          <h2 class="section-title" id="about-heading">Where Champions<br /><span class="gradient-text">Are Made</span></h2>
+          <p class="about-lead">Be The Best Health Club isn't just a gym — it's a movement. Located in the heart of Tilaknagar, Chhatrapati Sambhajinagar, we've been transforming lives since our founding.</p>
+          <p class="about-body">Our world-class facility spans over 5,000 sq. ft. with cutting-edge equipment, dedicated zones for strength, cardio, functional fitness, and group classes. Whether you're a complete beginner or a seasoned athlete, BTB is your second home.</p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon-wrap"><span class="feature-icon">🏋️</span></div>
+              <div>
+                <h4>State-of-the-Art Equipment</h4>
+                <p>Latest international-grade fitness machines and free weights</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon-wrap"><span class="feature-icon">🎯</span></div>
+              <div>
+                <h4>Personalized Programs</h4>
+                <p>Custom workout & nutrition plans tailored to your goals</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon-wrap"><span class="feature-icon">🔥</span></div>
+              <div>
+                <h4>Motivating Environment</h4>
+                <p>A community that pushes you to unlock your true potential</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#membership" class="btn btn-primary" id="about-cta">Become a Member</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Our Services</div>
+        <h2 class="section-title" id="services-heading">Everything You Need to<br /><span class="gradient-text">Dominate Your Goals</span></h2>
+        <p class="section-subtitle">From strength training to mindful recovery, BTB has every tool and resource you need on your fitness journey.</p>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+        <div class="service-card" data-service="strength">
+          <div class="service-icon-bg">
+            <span class="service-icon">💪</span>
+          </div>
+          <h3 class="service-title">Strength Training</h3>
+          <p class="service-desc">Build raw power and muscle with our premium free weights, barbells, and resistance machines under expert guidance.</p>
+          <div class="service-tags">
+            <span>Powerlifting</span><span>Bodybuilding</span><span>Functional</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="cardio">
+          <div class="service-icon-bg">
+            <span class="service-icon">🏃</span>
+          </div>
+          <h3 class="service-title">Cardio Zone</h3>
+          <p class="service-desc">Burn fat and boost endurance with our state-of-the-art treadmills, ellipticals, cycles, and rowing machines.</p>
+          <div class="service-tags">
+            <span>HIIT</span><span>Steady State</span><span>Interval</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="personal">
+          <div class="service-icon-bg">
+            <span class="service-icon">🎯</span>
+          </div>
+          <h3 class="service-title">Personal Training</h3>
+          <p class="service-desc">One-on-one sessions with our certified trainers who craft a program specifically built for your body and goals.</p>
+          <div class="service-tags">
+            <span>Custom Plan</span><span>Nutrition</span><span>Tracking</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="group">
+          <div class="service-icon-bg">
+            <span class="service-icon">🤸</span>
+          </div>
+          <h3 class="service-title">Group Classes</h3>
+          <p class="service-desc">Join our energetic group classes — from Zumba and Yoga to CrossFit and HIIT Boot Camp. Fun and effective!</p>
+          <div class="service-tags">
+            <span>Yoga</span><span>Zumba</span><span>CrossFit</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="nutrition">
+          <div class="service-icon-bg">
+            <span class="service-icon">🥗</span>
+          </div>
+          <h3 class="service-title">Nutrition Coaching</h3>
+          <p class="service-desc">Get customized diet plans and expert nutritional counseling to complement your training and accelerate results.</p>
+          <div class="service-tags">
+            <span>Diet Plans</span><span>Supplements</span><span>Coaching</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-service="recovery">
+          <div class="service-icon-bg">
+            <span class="service-icon">🧘</span>
+          </div>
+          <h3 class="service-title">Recovery & Wellness</h3>
+          <p class="service-desc">Dedicated stretching zones, foam rolling, and mindfulness sessions to keep your body performing at its peak.</p>
+          <div class="service-tags">
+            <span>Stretching</span><span>Mindfulness</span><span>Mobility</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLASSES ========== -->
+  <section class="classes" id="classes" aria-labelledby="classes-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Group Classes</div>
+        <h2 class="section-title" id="classes-heading">Train Together,<br /><span class="gradient-text">Achieve Together</span></h2>
+        <p class="section-subtitle">Join any of our dynamic group classes, led by passionate instructors who bring the energy every single session.</p>
+      </div>
+
+      <div class="classes-grid">
+        <div class="class-card" id="class-strength">
+          <div class="class-img-wrap">
+            <img src="assets/images/class_strength.png" alt="Strength Training Class at BTB" loading="lazy" />
+            <div class="class-overlay">
+              <span class="class-level difficulty-hard">Advanced</span>
+            </div>
+          </div>
+          <div class="class-info">
+            <div class="class-meta">
+              <span class="class-time">⏱ 60 min</span>
+              <span class="class-capacity">👥 15 max</span>
+            </div>
+            <h3>Strength & Power</h3>
+            <p>Master compound lifts and build an unbreakable physique with our structured powerlifting program.</p>
+            <a href="#contact" class="class-btn" id="class-strength-btn">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" id="class-cardio">
+          <div class="class-img-wrap">
+            <img src="assets/images/class_cardio.png" alt="Cardio Blast Class at BTB" loading="lazy" />
+            <div class="class-overlay">
+              <span class="class-level difficulty-medium">Intermediate</span>
+            </div>
+          </div>
+          <div class="class-info">
+            <div class="class-meta">
+              <span class="class-time">⏱ 45 min</span>
+              <span class="class-capacity">👥 20 max</span>
+            </div>
+            <h3>Cardio Blast</h3>
+            <p>High-energy cardio circuits that torch calories, boost stamina and leave you feeling incredible.</p>
+            <a href="#contact" class="class-btn" id="class-cardio-btn">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" id="class-yoga">
+          <div class="class-img-wrap">
+            <img src="assets/images/class_yoga.png" alt="Yoga & Mindfulness at BTB" loading="lazy" />
+            <div class="class-overlay">
+              <span class="class-level difficulty-easy">Beginner</span>
+            </div>
+          </div>
+          <div class="class-info">
+            <div class="class-meta">
+              <span class="class-time">⏱ 50 min</span>
+              <span class="class-capacity">👥 12 max</span>
+            </div>
+            <h3>Yoga & Mindfulness</h3>
+            <p>Find balance, flexibility and inner peace. Perfect for active recovery and mental clarity.</p>
+            <a href="#contact" class="class-btn" id="class-yoga-btn">Book Class</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timetable -->
+      <div class="timetable-wrapper">
+        <h3 class="timetable-heading">Weekly Schedule</h3>
+        <div class="timetable" id="timetable">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-slot">6:00 AM</td>
+                <td><span class="tt-class morning">Strength</span></td>
+                <td><span class="tt-class morning">Cardio</span></td>
+                <td><span class="tt-class morning">Strength</span></td>
+                <td><span class="tt-class morning">Yoga</span></td>
+                <td><span class="tt-class morning">Cardio</span></td>
+                <td><span class="tt-class morning">Strength</span></td>
+              </tr>
+              <tr>
+                <td class="time-slot">8:00 AM</td>
+                <td><span class="tt-class morning">Yoga</span></td>
+                <td><span class="tt-class morning">Strength</span></td>
+                <td><span class="tt-class morning">Cardio</span></td>
+                <td><span class="tt-class morning">Strength</span></td>
+                <td><span class="tt-class morning">Yoga</span></td>
+                <td><span class="tt-class morning">Cardio</span></td>
+              </tr>
+              <tr>
+                <td class="time-slot">5:00 PM</td>
+                <td><span class="tt-class evening">Cardio</span></td>
+                <td><span class="tt-class evening">Yoga</span></td>
+                <td><span class="tt-class evening">Strength</span></td>
+                <td><span class="tt-class evening">Cardio</span></td>
+                <td><span class="tt-class evening">Strength</span></td>
+                <td><span class="tt-class evening">—</span></td>
+              </tr>
+              <tr>
+                <td class="time-slot">7:00 PM</td>
+                <td><span class="tt-class evening">Strength</span></td>
+                <td><span class="tt-class evening">Cardio</span></td>
+                <td><span class="tt-class evening">Yoga</span></td>
+                <td><span class="tt-class evening">Strength</span></td>
+                <td><span class="tt-class evening">Cardio</span></td>
+                <td><span class="tt-class evening">—</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRAINERS ========== -->
+  <section class="trainers" id="trainers" aria-labelledby="trainers-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Expert Team</div>
+        <h2 class="section-title" id="trainers-heading">Meet Your<br /><span class="gradient-text">Coaches</span></h2>
+        <p class="section-subtitle">Our certified trainers bring years of experience, passion, and deep expertise to guide your transformation.</p>
+      </div>
+
+      <div class="trainers-grid" id="trainers-grid">
+        <div class="trainer-card" id="trainer-rajesh">
+          <div class="trainer-img-wrap">
+            <img src="assets/images/trainer_1.png" alt="Trainer Rajesh Kumar – Strength Coach at BTB" loading="lazy" />
+            <div class="trainer-social">
+              <a href="#" class="t-social-link" aria-label="Instagram">📸</a>
+              <a href="#" class="t-social-link" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Rajesh Kumar</h3>
+            <span class="trainer-role">Head Strength Coach</span>
+            <p class="trainer-bio">8+ years of experience in powerlifting and bodybuilding. Certified by National Academy of Sports Medicine (NASM). Competed at state level.</p>
+            <div class="trainer-specialties">
+              <span>Powerlifting</span><span>Hypertrophy</span><span>Nutrition</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" id="trainer-priya">
+          <div class="trainer-img-wrap">
+            <img src="assets/images/trainer_2.png" alt="Trainer Priya Deshmukh – Cardio & Yoga at BTB" loading="lazy" />
+            <div class="trainer-social">
+              <a href="#" class="t-social-link" aria-label="Instagram">📸</a>
+              <a href="#" class="t-social-link" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Priya Deshmukh</h3>
+            <span class="trainer-role">Cardio & Yoga Specialist</span>
+            <p class="trainer-bio">6+ years of experience in group fitness, yoga therapy, and HIIT training. Certified RYT-200 yoga instructor with a passion for holistic wellness.</p>
+            <div class="trainer-specialties">
+              <span>Yoga</span><span>HIIT</span><span>Zumba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" id="trainer-arjun">
+          <div class="trainer-img-wrap">
+            <img src="assets/images/trainer_3.png" alt="Trainer Arjun Patil – Combat Fitness at BTB" loading="lazy" />
+            <div class="trainer-social">
+              <a href="#" class="t-social-link" aria-label="Instagram">📸</a>
+              <a href="#" class="t-social-link" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Arjun Patil</h3>
+            <span class="trainer-role">Combat Fitness & MMA Coach</span>
+            <p class="trainer-bio">Former state-level boxing champion with 5+ years of coaching. Expert in functional fitness, MMA conditioning and mental toughness training.</p>
+            <div class="trainer-specialties">
+              <span>Boxing</span><span>MMA</span><span>Functional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEMBERSHIP ========== -->
+  <section class="membership" id="membership" aria-labelledby="membership-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Membership Plans</div>
+        <h2 class="section-title" id="membership-heading">Invest In Your<br /><span class="gradient-text">Best Self</span></h2>
+        <p class="section-subtitle">Transparent pricing, no hidden fees. Choose the plan that fits your goals and budget perfectly.</p>
+      </div>
+
+      <div class="membership-toggle" id="membership-toggle">
+        <button class="toggle-btn active" id="toggle-monthly" data-period="monthly">Monthly</button>
+        <button class="toggle-btn" id="toggle-annual" data-period="annual">Annual <span class="discount-badge">Save 20%</span></button>
+      </div>
+
+      <div class="plans-grid" id="plans-grid">
+        <!-- Starter -->
+        <div class="plan-card" id="plan-starter">
+          <div class="plan-header">
+            <span class="plan-icon">🌱</span>
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-desc">Perfect for beginners ready to take the first step</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount" data-monthly="999" data-annual="799">999</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feature-yes">Access to gym floor</li>
+            <li class="feature-yes">Cardio equipment</li>
+            <li class="feature-yes">Locker room access</li>
+            <li class="feature-yes">2 group classes/month</li>
+            <li class="feature-no">Personal trainer sessions</li>
+            <li class="feature-no">Nutrition coaching</li>
+            <li class="feature-no">Diet plan</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline plan-btn" id="plan-starter-btn">Get Starter</a>
+        </div>
+
+        <!-- Pro (Featured) -->
+        <div class="plan-card plan-featured" id="plan-pro">
+          <div class="plan-badge-wrap">
+            <span class="plan-badge">Most Popular</span>
+          </div>
+          <div class="plan-header">
+            <span class="plan-icon">⚡</span>
+            <h3 class="plan-name">Pro</h3>
+            <p class="plan-desc">The complete package for serious fitness enthusiasts</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount" data-monthly="1999" data-annual="1599">1999</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feature-yes">Full gym access (24/7)</li>
+            <li class="feature-yes">All cardio equipment</li>
+            <li class="feature-yes">Unlimited group classes</li>
+            <li class="feature-yes">4 PT sessions/month</li>
+            <li class="feature-yes">Custom workout plan</li>
+            <li class="feature-yes">Basic nutrition guide</li>
+            <li class="feature-no">Advanced diet plan</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary plan-btn" id="plan-pro-btn">Get Pro</a>
+        </div>
+
+        <!-- Elite -->
+        <div class="plan-card" id="plan-elite">
+          <div class="plan-header">
+            <span class="plan-icon">👑</span>
+            <h3 class="plan-name">Elite</h3>
+            <p class="plan-desc">The ultimate VIP experience for those who demand the best</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount" data-monthly="3499" data-annual="2799">3499</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feature-yes">Everything in Pro</li>
+            <li class="feature-yes">Unlimited PT sessions</li>
+            <li class="feature-yes">Complete diet plan</li>
+            <li class="feature-yes">Monthly body analysis</li>
+            <li class="feature-yes">Dedicated locker</li>
+            <li class="feature-yes">Nutrition supplements</li>
+            <li class="feature-yes">Priority class booking</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline plan-btn" id="plan-elite-btn">Get Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Our Club</div>
+        <h2 class="section-title" id="gallery-heading">See The <span class="gradient-text">BTB</span> World</h2>
+        <p class="section-subtitle">A glimpse inside our world-class facility and the vibrant community that calls it home.</p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item" style="grid-column: span 2; grid-row: span 2;">
+          <img src="assets/images/about_gym.png" alt="BTB Premium Gym Floor" loading="lazy" />
+          <div class="gallery-overlay"><span>Premium Gym Floor</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/class_strength.png" alt="Strength Training Class" loading="lazy" />
+          <div class="gallery-overlay"><span>Strength Zone</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/class_cardio.png" alt="Cardio Zone" loading="lazy" />
+          <div class="gallery-overlay"><span>Cardio Zone</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/class_yoga.png" alt="Yoga Studio" loading="lazy" />
+          <div class="gallery-overlay"><span>Yoga Studio</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/gallery_1.png" alt="Free Weights Area" loading="lazy" />
+          <div class="gallery-overlay"><span>Free Weights</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Success Stories</div>
+        <h2 class="section-title" id="testimonials-heading">Real People,<br /><span class="gradient-text">Real Results</span></h2>
+      </div>
+
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"BTB completely changed my life. In just 6 months, I lost 18 kg and built genuine muscle. The trainers are incredibly dedicated and the facility is world-class."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div>
+                <strong>Saurabh More</strong>
+                <span>Lost 18 kg in 6 months</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The yoga classes by Priya are absolutely amazing. I came in with chronic back pain and now I'm pain-free and more flexible than ever. Best investment I ever made."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AP</div>
+              <div>
+                <strong>Ananya Patil</strong>
+                <span>Yoga Member for 2 Years</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"As a working professional, I needed a gym that fits my schedule. BTB's flexible timings and the expert team under Coach Rajesh made all the difference. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">VK</div>
+              <div>
+                <strong>Vishal Kulkarni</strong>
+                <span>Pro Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Coach Arjun's boxing sessions are intense and exhilarating! I've never felt more confident and fit. The energy in this gym is unmatched anywhere in Sambhajinagar."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div>
+                <strong>Rahul Sharma</strong>
+                <span>Combat Fitness Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The Elite membership is worth every rupee! The personalized attention and custom diet plan helped me go from 70 kg to competing in a bodybuilding show. BTB is the best!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">ND</div>
+              <div>
+                <strong>Nilesh Desai</strong>
+                <span>Elite Member & Competitor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="t-ctrl prev" id="t-prev" aria-label="Previous testimonial">←</button>
+          <div class="t-dots" id="t-dots"></div>
+          <button class="t-ctrl next" id="t-next" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title" id="contact-heading">Start Your<br /><span class="gradient-text">Journey Today</span></h2>
+        <p class="section-subtitle">Ready to transform? Fill out the form or visit us directly. Our team is always ready to help you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contact-location">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Our Location</h4>
+              <p>V88Q+PGC, Tilaknagar, Ulkanagari,<br />Chhatrapati Sambhajinagar,<br />Maharashtra 431005</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+              <p><a href="tel:+918888888888">+91 88888 88888</a></p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-hours">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Monday – Saturday: 5:30 AM – 10:00 PM</p>
+              <p>Sunday: 7:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:info@btbhealthclub.com">info@btbhealthclub.com</a></p>
+            </div>
+          </div>
+
+          <!-- Map Embed -->
+          <div class="map-wrapper" id="map-wrapper">
+            <iframe
+              title="BTB Health Club Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0!2d75.3231!3d19.8762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda59a2f14a7867%3A0x0!2sV88Q%2BPGC%2C%20Tilaknagar%2C%20Ulkanagari%2C%20Chhatrapati%20Sambhajinagar%2C%20Maharashtra%20431005!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <h3 class="form-title">Book a Free Trial Session</h3>
+          <div class="form-group">
+            <label for="contact-name">Full Name *</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-email-input">Email Address *</label>
+              <input type="email" id="contact-email-input" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-phone-input">Phone Number *</label>
+              <input type="tel" id="contact-phone-input" name="phone" placeholder="+91 98765 43210" autocomplete="tel" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-goal">Your Fitness Goal</label>
+            <select id="contact-goal" name="goal">
+              <option value="">Select your goal...</option>
+              <option value="weight-loss">Weight Loss</option>
+              <option value="muscle-gain">Muscle Gain</option>
+              <option value="endurance">Build Endurance</option>
+              <option value="flexibility">Improve Flexibility</option>
+              <option value="overall">Overall Fitness</option>
+              <option value="competition">Competition Prep</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-plan">Interested In</label>
+            <select id="contact-plan" name="plan">
+              <option value="">Select a plan...</option>
+              <option value="starter">Starter Plan</option>
+              <option value="pro">Pro Plan</option>
+              <option value="elite">Elite Plan</option>
+              <option value="trial">Free Trial</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell us about your fitness journey, any injuries, or questions..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+            <span>Book My Free Session</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <p class="form-disclaimer">By submitting, you agree to receive information from BTB Health Club. No spam, ever.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <span class="logo-btb">BTB</span>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">Be The Best</span>
+              <span class="logo-sub">Health Club</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Where iron meets ambition. Your transformation begins here — in the heart of Chhatrapati Sambhajinagar.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Facebook" id="footer-facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram" id="footer-instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="YouTube" id="footer-youtube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.58C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp" id="footer-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#trainers">Our Trainers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Membership</h4>
+          <ul>
+            <li><a href="#membership">Starter Plan</a></li>
+            <li><a href="#membership">Pro Plan</a></li>
+            <li><a href="#membership">Elite Plan</a></li>
+            <li><a href="#contact">Free Trial</a></li>
+            <li><a href="#contact">Corporate Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Tilaknagar, Ulkanagari</li>
+            <li>📍 Chhatrapati Sambhajinagar 431005</li>
+            <li><a href="tel:+919999999999">📞 +91 99999 99999</a></li>
+            <li><a href="mailto:info@btbhealthclub.com">✉️ info@btbhealthclub.com</a></li>
+            <li>🕐 Mon–Sat: 5:30 AM – 10 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Be The Best Health Club (BTB). All rights reserved. | Crafted with ❤️ in Maharashtra</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- JS Modules -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

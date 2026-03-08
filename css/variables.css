@@ -1,0 +1,86 @@
+/* ===== DESIGN SYSTEM VARIABLES ===== */
+:root {
+    /* Brand Colors */
+    --clr-primary: #e8321e;
+    --clr-primary-dark: #b82615;
+    --clr-primary-glow: rgba(232, 50, 30, 0.35);
+    --clr-secondary: #ff6b35;
+    --clr-accent: #ffa726;
+
+    /* Gradient */
+    --gradient-brand: linear-gradient(135deg, #e8321e 0%, #ff6b35 50%, #ffa726 100%);
+    --gradient-dark: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+    --gradient-card: linear-gradient(145deg, #1a1a1a, #222);
+    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.85) 100%);
+
+    /* Neutrals */
+    --clr-bg: #0a0a0a;
+    --clr-bg-2: #111111;
+    --clr-bg-3: #1a1a1a;
+    --clr-bg-4: #222222;
+    --clr-surface: rgba(255, 255, 255, 0.03);
+    --clr-surface-hover: rgba(255, 255, 255, 0.06);
+    --clr-border: rgba(255, 255, 255, 0.08);
+    --clr-border-hover: rgba(232, 50, 30, 0.4);
+
+    /* Text */
+    --clr-text-primary: #ffffff;
+    --clr-text-secondary: #b0b0b0;
+    --clr-text-muted: #666666;
+    --clr-text-accent: #e8321e;
+
+    /* Typography */
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-ui: 'Inter', sans-serif;
+
+    /* Sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+    --fs-4xl: 3.5rem;
+    --fs-5xl: 5rem;
+    --fs-hero: clamp(4rem, 12vw, 10rem);
+
+    /* Spacing */
+    --sp-xs: 0.5rem;
+    --sp-sm: 1rem;
+    --sp-md: 1.5rem;
+    --sp-lg: 2rem;
+    --sp-xl: 3rem;
+    --sp-2xl: 4rem;
+    --sp-3xl: 6rem;
+    --sp-4xl: 8rem;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --radius-full: 9999px;
+
+    /* Shadow */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.7);
+    --shadow-glow: 0 0 40px rgba(232, 50, 30, 0.25);
+    --shadow-card: 0 4px 32px rgba(0, 0, 0, 0.6);
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-mid: 0.3s ease;
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Navbar */
+    --navbar-height: 80px;
+
+    /* Section */
+    --section-padding: clamp(80px, 10vw, 140px);
+    --container-max: 1280px;
+    --container-pad: clamp(1.5rem, 5vw, 3rem);
+}

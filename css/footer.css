@@ -1,0 +1,156 @@
+/* ===== FOOTER ===== */
+.footer {
+    background: #070707;
+    border-top: 1px solid var(--clr-border);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-brand);
+}
+
+.footer-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-pad);
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+    gap: var(--sp-2xl);
+    padding: var(--sp-3xl) 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: var(--sp-md);
+}
+
+.footer-tagline {
+    font-size: var(--fs-sm);
+    color: var(--clr-text-muted);
+    line-height: 1.8;
+    max-width: 320px;
+    margin-bottom: var(--sp-lg);
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-sm);
+    color: var(--clr-text-secondary);
+    transition: all var(--transition-mid);
+}
+
+.footer-social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-social-link:hover {
+    background: var(--gradient-brand);
+    border-color: transparent;
+    color: #fff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(232, 50, 30, 0.3);
+}
+
+.footer-links-group h4 {
+    font-size: var(--fs-xs);
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--clr-text-primary);
+    margin-bottom: var(--sp-md);
+}
+
+.footer-links-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links-group li,
+.footer-links-group li a {
+    font-size: var(--fs-sm);
+    color: var(--clr-text-muted);
+    transition: color var(--transition-fast);
+}
+
+.footer-links-group li a:hover {
+    color: var(--clr-primary);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sp-lg) 0;
+    border-top: 1px solid var(--clr-border);
+    gap: var(--sp-lg);
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: var(--fs-xs);
+    color: var(--clr-text-muted);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: var(--sp-md);
+}
+
+.footer-bottom-links a {
+    font-size: var(--fs-xs);
+    color: var(--clr-text-muted);
+    transition: color var(--transition-fast);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--clr-primary);
+}
+
+@media (max-width: 960px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
